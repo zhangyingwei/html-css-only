@@ -6,6 +6,8 @@
   <title>HTML与CSS的艺术</title>
 </head>
 <body>
-  
+  {% for project in site.projects %}
+    <h2>{{ project.name }}</h2>
+  {% endfor %}
 </body>
 </html>

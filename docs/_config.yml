@@ -1,1 +1,4 @@
-theme: jekyll-theme-cayman
+
+projects:
+  - name: "2020"
+    path: "/2020"
