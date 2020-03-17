@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: brown;
+}
+
+ul {
+  list-style: none;
+  padding-top: 100px;
+}
+
+ul > li {
+  font-size: 0;
+  text-align: center;
+}
+
+ul > li > span {
+  display: inline-block;
+  /* border: 1px solid #000; */
+  width: 200px;
+  height: 200px;
+  font-size: 200px;
+  line-height: 200px;
+  text-align: center;
+  font-weight: bolder;
+  position: relative;
+}
+
+ul > li > span::before ,ul > li > span::after {
+  content: attr(data);
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ul > li > span::before {
+  color: rgba(0, 0, 0, 0.2);
+  transform: skew(5deg) translateX(10px);
+  transition: .2s;
+}
+
+ul > li > span::after {
+  color: brown;
+  text-shadow: 0 -2px 5px rgb(212, 93, 93);
+  transform-origin: 100% 0 0;
+  transform: rotateX(20deg);
+  transition: .2s;
+}
+
+ul > li > span:hover::before {
+  transform: skew(20deg) translateX(25px) scale(1,1.1) translateY(10px);
+}
+
+ul > li > span:hover::after {
+  color: rgb(190, 60, 60);
+  transform: rotateX(40deg) translateY(5px);
+}

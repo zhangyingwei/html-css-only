@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(55, 40, 65);
+}
+
+.main-container {
+  color: aliceblue;
+  padding-top: 100px;
+}
+
+.line-container {
+  width: 910px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.line-container .loading {
+  width: 300px;
+  text-align: center;
+}
+
+.line-container .loading.loading1 {
+  animation: loading1-rotate 2s infinite 0s;
+}
+
+.line-container .loading.loading1 .item {
+  stroke: crimson;
+  stroke-dasharray: 100;
+  stroke-width: 10;
+  stroke-linecap: round;
+  fill: none;
+}
+
+@keyframes loading1-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+

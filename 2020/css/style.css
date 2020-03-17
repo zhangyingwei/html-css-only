@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+/* 
+#E71D36
+#FF9F1C 
+*/
+
+body {
+  background: #FF9F1C;
+  animation: bodyAction 2s ease-in-out;
+}
+
+@keyframes bodyAction {
+  0% {
+    background: #E71D36;
+  }
+  100% {
+    background: #FF9F1C ;
+  }
+}
+
+.num {
+  font-size: 200px;
+  position: fixed;
+  color: #FF9F1C;
+  text-shadow: 5px 0 0 #000;
+}
+
+.num span {
+  display: block;
+  vertical-align: top;
+  height: 200px;
+  width: 180px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.num .check {
+  color: #E71D36;
+}
+
+@keyframes checkAction {
+  0% {
+    color: #FF9F1C;
+  }
+  100% {
+    color: #E71D36;
+  }
+}
+
+.num.num1 {
+  top: -1600px;
+  left: calc(50% - 400px);
+  animation: num1Action 2s ease-in-out;
+}
+
+@keyframes num1Action {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -1600px;
+    /* color: #E71D36; */
+  }
+}
+
+.num.num2 {
+  left: calc(50% - 200px);
+  top: -1200px;
+  animation: num2Actoin 2s ease-in-out;
+}
+
+@keyframes num2Actoin {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -1200px;
+    /* color: #E71D36; */
+  }
+}
+
+.num.num3 {
+  left: calc(50% + 0px);
+
+  top: -1600px;
+  animation: num3Actoin 2s ease-in-out;
+}
+
+@keyframes num3Actoin {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -1600px;
+    /* color: #E71D36; */
+  }
+}
+
+.num.num4 {
+  left: calc(50% + 200px);
+
+  top: -1200px;
+  animation: num4Actoin 2s ease-in-out;
+}
+
+@keyframes num4Actoin {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -1200px;
+    /* color: #E71D36; */
+  }
+}
