@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/vue.js"></script>
   <title>HTML与CSS的艺术</title>
 </head>
@@ -10,7 +11,7 @@
 <div id="app">
   <div class="project" v-for="project in projects">
     <!-- <div class="name">{{project.name}}</div> -->
-    <a :href="project.path">{{project.name}}</a>
+    <a class="menu-item" target="_blank" :href="project.path">{{project.name}}</a>
   </div>
 </div>
 </body>
