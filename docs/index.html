@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/vue.js"></script>
   <title>HTML与CSS的艺术</title>
 </head>
 <body>
-  {% for project in site.projects %}
-    <h2>{{ project.name }}</h2>
-  {% endfor %}
+<div id="app">
+  <div class="project" v-for="project in projects">
+    <!-- <div class="name">{{project.name}}</div> -->
+    <a :href="project.path">{{project.name}}</a>
+  </div>
+</div>
 </body>
+<script src="js/app.js"></script>
 </html>
