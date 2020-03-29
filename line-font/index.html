@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>线条字</title>
+</head>
+<body>
+  <div class="container">
+    <svg viewBox="0 0 1000 300">
+      <symbol id="line-text">
+        <text text-anchor="middle" x="50%" y="50%" dy=".4em">
+          Microgoople
+        </text>
+      </symbol>
+
+      <use xlink:href="#line-text" class="text"></use>
+      <use xlink:href="#line-text" class="text"></use>
+      <use xlink:href="#line-text" class="text"></use>
+      <use xlink:href="#line-text" class="text"></use>
+    </svg>
+  </div>
+</body>
+</html>
