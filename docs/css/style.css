@@ -5,7 +5,20 @@
 }
 
 #app {
-  padding: 20px 50px;
+  padding: 20px 0px;
+  width: 970px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
+.project {
+  border: 1px solid #000;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
 }
 
 .menu-item {
