@@ -1,13 +1,19 @@
 * {
   padding: 0;
   margin: 0;
-  font-size: 0;
+}
+html{
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: rgb(197, 107, 120);
 }
 
 #app {
   padding: 20px 0px;
   width: 970px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   margin: 0 auto;
 }
 
@@ -17,35 +23,60 @@
   margin: 10px;
   width: 300px;
   height: 200px;
-  cursor: pointer;
   background-size: 300px 200px;
-  background-repeat: no-repeat;
-  transition: .2s;
-  position: relative;
-}
-
-.project:hover {
-  background-size: 150% 150%;
+  /* background-repeat: no-repeat; */
   background-position: center;
+  -webkit-transition:all  .6s;
+  -moz-transition:all  .6s;
+  -ms-transition:all  .6s;
+  -o-transition:all  .6s;
+  transition:all  .6s;
+  box-shadow: 0 0 30px -10px rgb(75, 44, 44);
+  border-radius: 2px;
 }
 
-.project .menu-item {
-  font-family: '微软雅黑','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  font-weight: 200;
-  color: white;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 60px;
+.project:hover .actions {
+  padding: 30px 10px;
+}
+
+.project .actions {
+  width: calc(100% - 20px);
+  padding: 10px;
   text-align: center;
-  transition: .5s;
-  line-height: 60px;
-  background-color: rgb(156, 156, 156,0.5);
+  background-color: rgb(227, 205, 164);
+  transition: .2s;
 }
 
-.project:hover .menu-item {
-  height: 200px;
-  line-height: 200px;
-  background-color: rgba(0, 0, 0, 0.212);
+.project .actions .space {
+  display: inline-block;
+  width: 10px;
+}
+
+.project .actions .action {
+  color: rgb(47, 52, 59);
+  text-decoration-line: none;
+  font-family: '微软雅黑';
+  font-weight: 200;
+}
+.project .actions .action:hover{
+  color: rgb(112, 48, 48);
+}
+a:hover {
+  color: rgb(112, 48, 48);
+  font-weight: 200;
+}
+/* a:visited {
+  color: rgb(126, 130, 122);
+  text-decoration-line: none;
+  font-weight: 200;
+} */
+a:link {
+  color: rgb(126, 130, 122);
+  text-decoration-line: none;
+  font-weight: 200;
+}
+a:active {
+  color: rgb(126, 130, 122);
+  text-decoration-line: none;
+  font-weight: 200;
 }

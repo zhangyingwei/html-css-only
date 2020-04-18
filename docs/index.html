@@ -3,14 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1576261_5ykx69n9ocw.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/vue.js"></script>
   <title>HTML与CSS的艺术</title>
 </head>
 <body>
 <div id="app">
-  <div class="project" v-for="project in projects" v-bind:style="{backgroundImage: 'url(' + getImagePath(project.path) + ')'}">
-    <h1 class="menu-item">{{project.name}}</h1>
+  <div class="project" v-for="project in projects" v-bind:style="{backgroundImage: 'url(' + getImagePath(project.name) + ')'}">
+    <div class="actions">
+      <a class="actoin" target="_blank" :href="getPagePath(project.name)">
+        <i class="iconfont phs-yulan"></i>
+        预览效果
+      </a>
+      <span class="space"></span>
+      <a class="action" target="_blank" :href="project.video">
+        <i class="iconfont phs-yulan1"></i>
+        观看视频
+      </a>
+    </div>
   </div>
 </div>
 </body>
