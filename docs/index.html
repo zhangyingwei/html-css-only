@@ -9,8 +9,8 @@
 </head>
 <body>
 <div id="app">
-  <div class="project" v-for="project in projects">
-    <a class="menu-item" target="_blank" :href="project.path">{{project.name}}</a>
+  <div class="project" v-for="project in projects" v-bind:style="{backgroundImage: 'url(' + getImagePath(project.path) + ')'}">
+    <h1 class="menu-item">{{project.name}}</h1>
   </div>
 </div>
 </body>

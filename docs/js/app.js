@@ -25,5 +25,10 @@ var app = new Vue({
         path: "loading"
       }
     ]
+  },
+  methods: {
+    getImagePath(pathName){
+      return "https://raw.githubusercontent.com/zhangyingwei/html-css-only/master/"+pathName+"/image/profile.png"
+    }
   }
 })
