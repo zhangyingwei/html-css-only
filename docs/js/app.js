@@ -3,12 +3,48 @@ var app = new Vue({
   data: {
     projects:[
       {
+        name: "card",
+        video: "https://www.bilibili.com/video/BV1bJ411s7rj/"
+      },
+      {
+        name: "login",
+        video: "https://www.bilibili.com/video/BV1XJ411a7Mf/"
+      },
+      {
+        name: "button",
+        video: "https://www.bilibili.com/video/BV1dJ41157wH/"
+      },
+      {
         name: "2020",
         video: "https://www.bilibili.com/video/BV1xJ411G7ar/"
       },
       {
-        name: "card",
-        video: "https://www.bilibili.com/video/BV1bJ411s7rj/"
+        name: "douyin",
+        video: "https://www.bilibili.com/video/BV1zJ411E7Xt/"
+      },
+      {
+        name: "jianzhi",
+        video: "https://www.bilibili.com/video/BV1R7411v7Ah/"
+      },
+      {
+        name: "border-button",
+        video: "https://www.bilibili.com/video/BV17741147Lg/"
+      },
+      {
+        name: "loading",
+        video: "https://space.bilibili.com/163890510/channel/detail?cid=114891"
+      },
+      {
+        name: "line-font",
+        video: "https://www.bilibili.com/video/BV16p4y117k1/"
+      },
+      {
+        name: "login2",
+        video: "https://www.bilibili.com/video/BV1tA411h7id/"
+      },
+      {
+        name: "login3",
+        video: "https://www.bilibili.com/video/BV1Sz411b7CR/"
       }
     ]
   },
