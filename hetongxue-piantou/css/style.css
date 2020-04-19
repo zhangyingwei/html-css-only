@@ -26,7 +26,7 @@ body {
 }
 
 .container .item .part1,.part2,.part3,.part4,.part5{
-  font-size: 140px;
+  font-size: 6vw;
   color: rgb(255, 255, 255);
   height: 100%;
   width: 0;
