@@ -45,6 +45,10 @@ var app = new Vue({
       {
         name: "login3",
         video: "https://www.bilibili.com/video/BV1Sz411b7CR/"
+      },
+      {
+        name: "hetongxue-piantou",
+        video: "https://www.bilibili.com/video/BV1h64y1T71F/"
       }
     ]
   },

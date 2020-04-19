@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+.container {
+  height: 100%;
+  font-size: 0;
+}
+
+.container .item {
+  height: 100%;
+  width: calc(100% / 12);
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.container .item .part1,.part2,.part3,.part4,.part5{
+  font-size: 140px;
+  color: rgb(255, 255, 255);
+  height: 100%;
+  width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-style: italic;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container .item .part1 {
+  background-color: rgb(255, 202, 64);
+  z-index: 1;
+  animation: part .8s linear 0s forwards;
+}
+
+.container .item .part2 {
+  background-color: rgb(77, 190, 255);
+  z-index: 2;
+  animation: part .4s linear 1.6s forwards;
+}
+.container .item .part3 {
+  background-color: rgb(136, 216, 117);
+  z-index: 3;
+  animation: part .4s linear 2.1s forwards;
+}
+.container .item .part4 {
+  background-color: rgb(255, 117, 76);
+  z-index: 4;
+  animation: part .4s linear 2.6s forwards;
+}
+.container .item .part5 {
+  background-color: rgb(0, 0, 0);
+  text-shadow: .2em 0 .2em rgb(26, 26, 209),-.2em 0 .2em rgb(26, 26, 209),0 -.2em .2em rgb(26, 26, 209),0 .2em .2em rgb(26, 26, 209);
+  z-index: 5;
+}
+
+.container .item:nth-child(1) .part5 {
+  animation: part .4s linear 5s forwards;
+}
+.container .item:nth-child(2) .part5 {
+  animation: part .4s linear 5.1s forwards;
+}
+.container .item:nth-child(3) .part5 {
+  animation: part .4s linear 5.2s forwards;
+}
+.container .item:nth-child(4) .part5 {
+  animation: part .4s linear 5.3s forwards;
+}
+.container .item:nth-child(5) .part5 {
+  animation: part .4s linear 5.4s forwards;
+}
+.container .item:nth-child(6) .part5 {
+  animation: part .4s linear 5.5s forwards;
+}
+.container .item:nth-child(7) .part5 {
+  animation: part .4s linear 5.6s forwards;
+}
+.container .item:nth-child(8) .part5 {
+  animation: part .4s linear 5.7s forwards;
+}
+.container .item:nth-child(9) .part5 {
+  animation: part .4s linear 5.8s forwards;
+}
+.container .item:nth-child(10) .part5 {
+  animation: part .4s linear 5.9s forwards;
+}
+.container .item:nth-child(11) .part5 {
+  animation: part .4s linear 6s forwards;
+}
+.container .item:nth-child(12) .part5 {
+  animation: part .4s linear 6.1s forwards;
+}
+
+@keyframes part {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
