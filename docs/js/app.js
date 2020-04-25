@@ -52,7 +52,7 @@ var app = new Vue({
       },
       {
         name: "page-404",
-        video: "https://www.bilibili.com/video/BV1h64y1T71F/"
+        video: "https://www.bilibili.com/video/BV1Ti4y1b79K/"
       }
     ]
   },
