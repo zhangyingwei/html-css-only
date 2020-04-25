@@ -38,7 +38,7 @@ body {
 }
 
 .main-container .text-container .code {
-  font-size: 200px;
+  font-size: clamp(150px,20vw,200px);
   font-family: 'Arial Narrow';
   color: rgb(86, 86, 253);
   font-weight: bolder;
