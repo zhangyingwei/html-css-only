@@ -49,6 +49,10 @@ var app = new Vue({
       {
         name: "hetongxue-piantou",
         video: "https://www.bilibili.com/video/BV1h64y1T71F/"
+      },
+      {
+        name: "page-404",
+        video: "https://www.bilibili.com/video/BV1h64y1T71F/"
       }
     ]
   },
