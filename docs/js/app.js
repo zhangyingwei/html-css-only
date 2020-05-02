@@ -53,6 +53,10 @@ var app = new Vue({
       {
         name: "page-404",
         video: "https://www.bilibili.com/video/BV1Ti4y1b79K/"
+      },
+      {
+        name: "clock",
+        video: "https://www.bilibili.com/video/BV18Q4y1N7Ft/"
       }
     ]
   },
