@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(81, 43, 80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 300px;
+}
+
+.main-container .header {
+  font-size: 25px;
+  color: rgb(240, 208, 167);
+  text-align: center;
+  line-height: 80px;
+}
+
+.main-container .list-container {
+
+}
+
+.main-container .list-container > ul {
+  list-style: none;
+}
+
+.main-container .list-container > ul >li {
+  height: 50px;
+  background-color: rgb(182, 104, 118);
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 50px;
+  color: aliceblue;
+  position: relative;
+  border-bottom: 1px solid rgb(81, 43, 80);
+  z-index: 1;
+}
+
+.main-container .list-container > ul >li>label>span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: calc(100% - 70px);
+  padding: 0 20px 0 50px;
+  user-select: none;
+  transition: .5s;
+}
+
+input[type='checkbox'] {
+  width: 0;
+}
+
+input[type='checkbox']::before {
+  width: 10px;
+  height: 10px;
+  content: '';
+  display: block;
+  background-color: aliceblue;
+  border: 5px solid aliceblue;
+  border-radius: 20px;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 10px;
+  z-index: 3;
+  transition: .5s;
+}
+input[type='checkbox']:checked::before {
+  background-color: rgb(81, 43, 80);
+}
+
+input[type='checkbox']:checked+span {
+  background-color: rgb(102, 55, 100);
+  text-decoration: line-through;
+}
