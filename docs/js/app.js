@@ -57,6 +57,10 @@ var app = new Vue({
       {
         name: "clock",
         video: "https://www.bilibili.com/video/BV18Q4y1N7Ft/"
+      },
+      {
+        name: "todo-list",
+        video: "https://www.bilibili.com/video/BV13K4y187Hn/"
       }
     ]
   },
