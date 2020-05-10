@@ -61,6 +61,10 @@ var app = new Vue({
       {
         name: "todo-list",
         video: "https://www.bilibili.com/video/BV13K4y187Hn/"
+      },
+      {
+        name: "switch-button",
+        video: "https://www.bilibili.com/video/BV1vf4y1m7dC/"
       }
     ]
   },
