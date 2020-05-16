@@ -65,6 +65,10 @@ var app = new Vue({
       {
         name: "switch-button",
         video: "https://www.bilibili.com/video/BV1vf4y1m7dC/"
+      },
+      {
+        name: "split-font",
+        video: "https://www.bilibili.com/video/BV1vf4y1m7dC/"
       }
     ]
   },
