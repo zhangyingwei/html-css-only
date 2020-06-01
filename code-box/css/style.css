@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code-panel {
+  width: 700px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 50px 0 rgb(175, 174, 172);
+}
+
+.code-panel .header {
+  height: 40px;
+  background-color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 0 10px;
+}
+
+.code-panel .header > ul {
+  list-style: none;
+}
+
+
+.code-panel .header > ul > li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 10px 2px;
+}
+
+.code-panel .header > ul > li:nth-child(1) {
+  background-color: rgb(212, 26, 26);
+}
+
+.code-panel .header > ul > li:nth-child(2) {
+  background-color: rgb(224, 224, 20);
+}
+
+.code-panel .header > ul > li:nth-child(3) {
+  background-color: rgb(24, 194, 24);
+}
+
+.code-panel .footer {
+  height: 30px;
+  background-color: rgb(73, 83, 181);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.code-panel .footer > span {
+  display: inline-block;
+  line-height: 30px;
+  background-color: rgb(107, 121, 192);
+  margin-left: 20px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+pre code > div {
+  min-height: 100px;
+  font-size: 16px;
+  outline: none;
+  color: aliceblue;
+  padding: 20px;
+  font-family: 'Source Code Pro', monospace;
+}

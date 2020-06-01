@@ -69,6 +69,10 @@ var app = new Vue({
       {
         name: "split-font",
         video: "https://www.bilibili.com/video/BV1hf4y1U7fh/"
+      },
+      {
+        name: "code-box",
+        video: "https://www.bilibili.com/video/BV12p4y1S7qY/"
       }
     ]
   },
