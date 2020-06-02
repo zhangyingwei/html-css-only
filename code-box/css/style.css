@@ -16,7 +16,7 @@ body {
 
 .code-panel {
   width: 700px;
-  background-color: black;
+  background-color: rgb(43, 43, 43);
   border-radius: 10px;
   box-shadow: 0 0 50px 0 rgb(175, 174, 172);
 }
@@ -77,5 +77,6 @@ pre code > div {
   outline: none;
   color: aliceblue;
   padding: 20px;
+  overflow-x: hidden;
   font-family: 'Source Code Pro', monospace;
 }
