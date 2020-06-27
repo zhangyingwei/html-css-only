@@ -73,6 +73,10 @@ var app = new Vue({
       {
         name: "code-box",
         video: "https://www.bilibili.com/video/BV12p4y1S7qY/"
+      },
+      {
+        name: "nintendo-switch",
+        video: "https://www.bilibili.com/video/BV1jV41167cM/"
       }
     ]
   },
