@@ -77,6 +77,10 @@ var app = new Vue({
       {
         name: "nintendo-switch",
         video: "https://www.bilibili.com/video/BV1jV41167cM/"
+      },
+      {
+        name: "calendar",
+        video: "https://www.bilibili.com/video/BV1Ma4y1a76e/"
       }
     ]
   },

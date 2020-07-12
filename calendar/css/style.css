@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: darkcyan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Karla', sans-serif;
+}
+
+.main-container {
+  width: 700px;
+  height: 400px;
+  background-color: white;
+  font-size: 0;
+}
+
+.main-container .left {
+  display: inline-block;
+  width: 350px;
+  height: 400px;
+  vertical-align: top;
+  text-align: center;
+  background-color: #4bdada;
+}
+
+.main-container .left .week {
+  text-transform: uppercase;
+  font-size: 35px;
+  color: white;
+  line-height: 100px;
+}
+
+.main-container .left .day {
+  font-size: 180px;
+  color: white;
+}
+
+.main-container .right {
+  display: inline-block;
+  width: 350px;
+  height: 400px;
+  text-align: center;
+}
+
+.main-container .right .year {
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #21a5a5;
+  font-weight: bolder;
+  line-height: 100px;
+}
+
+.main-container .right .calendar {
+  padding: 0 35px;
+}
+
+.main-container .right .calendar .weeks .item {
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 40px;
+  line-height: 40px;
+  color: crimson;
+  font-weight: bolder;
+}
+
+.main-container .right .calendar .days .day {
+  font-size: 15px;
+  display: inline-block;
+  width: 40px;
+  line-height: 40px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.main-container .right .calendar .days .day.today {
+  background-color: crimson;
+  font-weight: bolder;
+  color: white;
+}
+
+.main-container .right .calendar .days .day:hover {
+  background-color: #e64c6b;
+  font-weight: bolder;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,body {
+  height: 100%;
+  background-color: darkcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Karla', sans-serif;
+}
+
+.main-container {
+  width: 700px;
+  height: 400px;
+  background-color: white;
+  font-size: 0;
+  .left {
+    display: inline-block;
+    width: 350px;
+    height: 400px;
+    vertical-align: top;
+    text-align: center;
+    background-color: rgb(75, 218, 218);
+    .week {
+      text-transform: uppercase;
+      font-size: 35px;
+      color: white;
+      line-height: 100px;
+    }
+    .day {
+      font-size: 180px;
+      color: white;
+    }
+  }
+  .right {
+    display: inline-block;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    .year {
+      text-transform: uppercase;
+      font-size: 35px;
+      color: rgb(33, 165, 165);
+      font-weight: bolder;
+      line-height: 100px;
+    }
+    .calendar {
+      padding: 0 35px;
+      .weeks {
+        .item {
+          font-size: 18px;
+          text-transform: uppercase;
+          display: inline-block;
+          width: 40px;
+          line-height: 40px;
+          color: crimson;
+          font-weight: bolder;
+        }
+      }
+      .days {
+        .day {
+          font-size: 15px;
+          display: inline-block;
+          width: 40px;
+          line-height: 40px;
+          transition: .2s;
+          cursor: pointer;
+          &.today {
+            background-color: crimson;
+            font-weight: bolder;
+            color: white;
+          }
+          &:hover {
+            background-color: rgb(230, 76, 107);
+            font-weight: bolder;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
